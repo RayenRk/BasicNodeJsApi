@@ -29,7 +29,7 @@ post.get('/all/:id', (req, res) => {
 
     const user2 = { 
         id: 2,
-        firstName: "Majdy",
+        firstName: "Majd",
         lastname: "Bouzidi"
     };
 
