@@ -1,5 +1,7 @@
 const express = require('express');
 const user = require('./routes/user');
+const auth = require('./routes/auth');
+const post = require('./routes/objet');
 
 
 // Create express instnace
@@ -7,7 +9,8 @@ const app = express();
 
 // Use API Routes example
 app.use('/user', user);
-
+app.use('/auth', auth);
+app.use('/post', post);
 
 // Routes examples
 app.get('/', (req, res) => {
@@ -32,6 +35,16 @@ app.get('/example1', (req, res) => {
     res.status(200).send('All Good!')
     //res.render('index')
 })
+
+app.get('/node', (req, res) => {
+    console.log("test1", req.query.name) 
+    console.log("test2", req.query.lastname)
+})
+
+app.get('/node/:name', (req, res) => {
+    console.log(req.params.name)
+})
+
 
 // Port configuration
 const port = process.env.PORT || 5000;
