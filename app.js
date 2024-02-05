@@ -1,7 +1,7 @@
 const express = require('express');
 const user = require('./routes/user');
 const auth = require('./routes/auth');
-const post = require('./routes/objet');
+const post = require('./routes/object');
 
 
 // Create express instnace
