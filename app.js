@@ -2,11 +2,8 @@ const express = require('express');
 const user = require('./routes/user');
 const auth = require('./routes/auth');
 const post = require('./routes/post');
-<<<<<<< HEAD
-=======
 
 app.use(express.json())
->>>>>>> 288971f160191bee2ff880cda8b4b9cbde2ca8c6
 
 // add bodyParser
 // app.use(express.json());
