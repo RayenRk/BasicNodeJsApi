@@ -19,7 +19,7 @@ post.get('/all', (req, res) => {
 
 post.get('/all/:id', (req, res) => {
 
-    console.log(req.params.id);
+    // console.log(req.params.id);
 
     const user1 = {
         id: 1,
