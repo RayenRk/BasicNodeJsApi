@@ -1,8 +1,10 @@
 const express = require('express');
 const user = require('./routes/user');
 const auth = require('./routes/auth');
-const post = require('./routes/object');
+const post = require('./routes/post');
 
+// add bodyParser
+// app.use(express.json());
 
 // Create express instnace
 const app = express();
